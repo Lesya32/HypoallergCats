@@ -1,0 +1,22 @@
+#header {
+    background-color: SandyBrown;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background: rgba(244, 164, 96, 0.8);
+    padding: 10px;
+    z-index: 1000;
+}
+
+#header a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 14px;
+
+}
+
+#header a:hover {
+    background-color: #ddd;
+    color: SandyBrown;
+
+}
