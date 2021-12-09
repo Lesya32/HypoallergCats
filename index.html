@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML+CSS</title>
+    <title>Гипоаллергенные кошки</title>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/picture.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="header">
-        <a href="#">Главная</a>
-        <a href="#">что то</a>
-        <a href="#">еще что то</a>
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Гипоаллергенные кошки</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="burger(this)">
+            <div class="burger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </a>
+
+
     </div>
-    <div class="picture">
+
         <img src="./img/1.jpg" alt="ошибка загрузки картинки">
-        <h2><div class="picture_title">гипоаллергенные кошки</div></h2>
-    </div>
+
+        <div id="header">
+            Гипоаллергенные кошки
+            <a href="#">Главная</a>
+            <a href="#">что то</a>
+            <a href="#">еще что то</a>
+        </div>
+
     <div id="second"></div>
 </body>
 </html>

@@ -4,19 +4,9 @@ img{
     max-width: 100%;
     display: block; 
     margin: 0 auto;
-    padding-top: 38px;
+    padding-top: 47px;
 }
 
 .picture {
     position: relative;
-}
-
-.picture_title{
-    position: absolute; /* Position the background text */
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */ 
-    font-size: 2vw;
 }
