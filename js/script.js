@@ -1,3 +1,4 @@
+//бургер
 function burger(burger) {
     var Topnav = document.getElementById("myTopnav");
     if (Topnav.className === "topnav") {

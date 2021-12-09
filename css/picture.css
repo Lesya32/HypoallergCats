@@ -1,4 +1,4 @@
-img{
+.mainpicter{
     max-height: 80%;
     width: auto;
     max-width: 100%;
@@ -6,7 +6,89 @@ img{
     margin: 0 auto;
     padding-top: 47px;
 }
+/*
+.leftimg {
+    float:left;
+    margin: 0px 7px 0px 0px;
+    width: 40%;
+    height: auto;
+   }
+*/
 
-.picture {
-    position: relative;
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    float:left;
+    margin: 0px 7px 0px 0px;
+    width: 50%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+  }
+  
+  /* Hide the images by default */
+.mySlides0, .mySlides1 {
+    display: none;
 }
+
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: relative;
+    bottom : 25vmin;
+    padding: 5%;
+    display: inline-block;
+    color: rgb(11, 63, 33);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+.next {
+    float: right;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+    
+  /* The dots/bullets/indicators */
+  .dot0, .dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    bottom : 10vmin;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
