@@ -71,7 +71,7 @@
     bottom : 10vmin;
   }
   
-  .active, .dot:hover {
+.dot:hover {
     background-color: #717171;
   }
   
