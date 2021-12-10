@@ -2,6 +2,7 @@ var slideIndex = 0;
 
 showSlides(slideIndex,0);
 showSlides(slideIndex,1);
+showSlides(slideIndex,2);
 
 function plusSlides(n,nom) {
   showSlides(slideIndex += n,nom);
