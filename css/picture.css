@@ -1,10 +1,18 @@
 .mainpicter{
-    max-height: 80%;
+    /*max-height: 80%;
     width: auto;
     max-width: 100%;
     display: block; 
     margin: 0 auto;
-    padding-top: 47px;
+    padding-top: 47px;*/
+    background: url('../img/1.jpg') no-repeat center/contain; 
+    padding-bottom: 45%;   /*padding-top*/
+    width: 100%; 
+}
+
+.otst{
+  padding-top: 47px;
+
 }
 /*
 .leftimg {
@@ -19,76 +27,69 @@
 * {box-sizing:border-box}
 
 .slideshow-container {
-    float:left;
-    margin: 0px 7px 0px 0px;
+    position: relative;
+    float: left;    
+    margin-right:10px;
     width: 50%;
     max-width: 700px;
     height: auto;
-    display: block;
-  }
+}
   
-  /* Hide the images by default */
 .mySlides0, .mySlides1 {
     display: none;
 }
 
-
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: relative;
-    bottom : 25vmin;
-    padding: 5%;
-    display: inline-block;
-    color: rgb(11, 63, 33);
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
+.prev, .next {
+  position: absolute;
+  top : 50%;
+  padding: 2%;
+  background-color: #4a3b3b81;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
 
 .next {
-    float: right;
+    right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-    
-  /* The dots/bullets/indicators */
-  .dot0, .dot1, .dot2 {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    position: relative;
-    bottom : 10vmin;
-  }
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
   
-.dot0:hover, .dot1:hover, .dot2:hover {
-    background-color: #4a3b3b;
-  }
+.dot0, .dot1, .dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
   
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+}
+
+.active, .dot0:hover, .dot1:hover, .dot2:hover {
+  background-color: #4a3b3b;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
